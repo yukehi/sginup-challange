@@ -1,0 +1,118 @@
+.bg{
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: #ff7978;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.title{
+  padding: 10% 15% 0 15%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "title form";
+  margin: 5% 0 0 0;
+}
+.title {
+  grid-area: title;
+  padding: 15%;
+ }
+.form {
+  margin: 0 0 0 0;
+
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "button"
+    "sginup";
+}
+.button {
+  margin: 0 12% 15% 12% ;
+  grid-area: button;
+  background-color: #5d54a3;
+  border-radius: 15px;
+  text-align: center;
+  padding: 2%;
+
+ }
+
+.free{
+  font-size: 1rem;
+
+}
+
+.bold{
+  font-style: oblique;
+}
+.sginup {
+  margin: 0 25% 25% 25%;
+   grid-area: sginup; }
+
+/*form styles*/
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+#msform .action-button {
+	width: 100%;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+  border-radius: 15px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+.agree{
+  color: #c7c5d3;
+  font-size: 0.2rem;
+}
+.Terms{
+  color: #f66d73.;
+
+}
